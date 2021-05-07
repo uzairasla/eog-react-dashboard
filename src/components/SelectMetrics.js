@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { useQuery } from '@apollo/client';
 import { useDispatch } from 'react-redux'
 import Select from 'react-select'
-import {MetricsQuery} from '../gqlQueries/index'
-import './slectmetrics.css'
+import {MetricsQuery} from '../graphQLQueries/index'
+import './selectmetrics.css'
 
 const SelectMetric = () => {
 

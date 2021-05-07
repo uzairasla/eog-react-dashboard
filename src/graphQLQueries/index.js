@@ -1,4 +1,5 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
+import { ApolloClient, InMemoryCache } from '@apollo/client'
 
 export const MetricsQuery = gql`
 {
@@ -33,3 +34,8 @@ export const lastKnowMeasurementQuery = gql`
     }
   }
 `
+
+export const clientApollo = new ApolloClient({
+        uri: 'https://react.eogresources.com/graphql',
+        cache: new InMemoryCache(),
+      })
