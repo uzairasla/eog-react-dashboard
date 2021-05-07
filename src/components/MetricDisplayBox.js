@@ -12,7 +12,11 @@ function Metrics({ metricName }) {
   if (loading) return <p>Metric Info is loading</p>;
   if (error) return `Error! ${error}`;
 
-  return <MetricsCard metricInfo={data && data.getLastKnownMeasurement} />;
+  return (
+      <div style={{width: '200px', height: '100px', marginLeft: '2rem', display: 'inline-block', marginTop: '1rem'}}>
+      <MetricsCard metricInfo={data && data.getLastKnownMeasurement} />
+      </div>
+  )
 }
 
 export default Metrics;
