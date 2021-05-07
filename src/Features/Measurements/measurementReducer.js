@@ -5,7 +5,7 @@ const initialState = {
     metricData: [],
 }
 
-export const reducer = (state = initialState, action) =>{
+export const measurementReducer = (state = initialState, action) =>{
 
     switch(action.type) {
         case "SELECTED_METRIC" :
