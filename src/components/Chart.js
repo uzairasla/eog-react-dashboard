@@ -26,7 +26,7 @@ const Graph = () => {
       const {getMultipleMeasurements} = data
       dispatch({type: "METRICS_RECEIVED", payload: getMultipleMeasurements })
 
-},[data, error, loading, dispatch])
+},[data, error, dispatch])
     
 const grabMetricData = useSelector(state => state.measurements.metricData)
 

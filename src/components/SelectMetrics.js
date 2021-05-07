@@ -20,7 +20,7 @@ const SelectMetric = () => {
         
         }
 
-    },[ metrics])
+    },[ metrics, dispatch])
     if (loading) return <p>Loading... </p>
     if (error) return <p> ${error.message}</p>
 

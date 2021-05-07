@@ -12,6 +12,7 @@ import NowWhat from './components/NowWhat';
 import {clientApollo} from './graphQLQueries/index'
 import SelectMetrics from './components/SelectMetrics'
 import Chart from './components/Chart'
+import RealTimeMetrics from './components/RealTimeMetrics'
 const store = createStore();
 
 
@@ -38,6 +39,7 @@ const App = () => (
               <Header />
         {/* <NowWhat /> */}
         <SelectMetrics />
+        <RealTimeMetrics />
         <Chart />
       </Wrapper>
     </Provider>
